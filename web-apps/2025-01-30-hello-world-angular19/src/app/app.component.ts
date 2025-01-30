@@ -2,8 +2,6 @@ import {Component} from '@angular/core';
 
 import {CounterComponent} from './counter/counter.component';
 
-import {Counter} from './counter';
-
 @Component({
   selector: 'app-root',
   imports: [CounterComponent],
@@ -11,10 +9,5 @@ import {Counter} from './counter';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = '2025-01-30-hello-world-angular19';
-
-  counterFoobar: Counter = {
-    name: "blah blah lmao",
-    cntNum: 2,
-  };
+  foobarLabelName = "value:";
 }
