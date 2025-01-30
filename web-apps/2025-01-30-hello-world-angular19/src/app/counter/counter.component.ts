@@ -12,6 +12,11 @@ export class CounterComponent {
 
   foobarIncClick() {
     console.log('lmao ayy');
+    this.foobarForm.patchValue({
+      cntValue: this.foobarForm.value.cntValue + 1,
+      //cntValue: 9,
+      myStr: (this.foobarForm.value.cntValue % 2) ? 'lmao' : 'ayy',
+    });
   }
 
   foobarForm: FormGroup;
@@ -19,7 +24,7 @@ export class CounterComponent {
   constructor(fb: FormBuilder) {
     this.foobarForm = fb.group({
       cntValue: 7,
-      myStr: 'kek',
+      myStr: 'ayy',
     });
   }
 }
