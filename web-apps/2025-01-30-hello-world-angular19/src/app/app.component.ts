@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
-import {CounterComponent} from './counter/counter.component';
+import {CounterModule} from './counter/counter.module';
 
 @Component({
   selector: 'app-root',
-  imports: [CounterComponent],
+  imports: [CounterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
