@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+
+import {Counter} from '../counter';
 
 @Component({
   selector: 'hello-counter',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   title = 'hello-counter';
+
+  @Input() counterFoobar!: Counter;
 }
