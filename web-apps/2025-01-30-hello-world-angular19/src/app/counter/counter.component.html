@@ -1,5 +1,5 @@
 <div [formGroup]="foobarForm">
-  <p><label>{{ labelName }}</label><input type="text"/></p>
+  <p><label>{{ labelName }}</label><input type="text" formControlName="cntValue"/></p>
   <p><button type="button" (click)="foobarIncClick()">Increment!</button></p>
   <p>v3</p>
 </div>
