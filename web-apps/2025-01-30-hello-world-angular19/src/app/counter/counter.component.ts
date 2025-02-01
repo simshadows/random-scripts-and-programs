@@ -13,7 +13,7 @@ export class CounterComponent {
   foobarIncClick() {
     console.log('lmao ayy');
     this.foobarForm.patchValue({
-      cntValue: this.foobarForm.value.cntValue + 1,
+      cntValue: Number(this.foobarForm.value.cntValue) + 1,
       //cntValue: 9,
       myStr: (this.foobarForm.value.cntValue % 2) ? 'lmao' : 'ayy',
     });
